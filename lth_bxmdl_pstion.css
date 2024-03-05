@@ -1,0 +1,509 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*style*/
+body {
+	font: 16/28px arial, sans-serif; /*ukuran font standar/line-height_jenis font,_font family*/
+	background-image: url(ren-ran-Jy6luiLBsrk-unsplash.jpg); /*https://www.toptal.com/designers/subtlepatterns/thumbnail-view/ adalah website untuk mencari berbagai macam background*/
+	color: #333; /*warna  tulisan; penulisan #333 tiga angka/huruf yg sama berarti sama dengan #333333 enam angka/huruf yang sama*/
+}
+
+
+
+
+.top-bar {
+	position: fixed;
+	background-color: aqua;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	border-bottom: 6px solid #bf00ff;
+	z-index: 9999;
+	font-size: 30px;
+	font-family: Lucida Calligraphy;
+	text-align: center;
+	line-height: 60px;
+	font-weight: normal;
+	color: black;
+	text-shadow: 0 0 10px #fff, 
+				 0 0 20px #fff, 
+				 0 0 30px #fff, 
+				 0 0 40px #ff00de, 
+				 0 0 70px #ff00de, 
+				 0 0 80px #ff00de, 
+				 0 0 100px #ff00de, 
+				 0 0 150px #ff00de;
+}
+
+
+
+.container {
+	width: 960px;
+	margin: 80px auto;
+	background-color: #ccc;
+	position: relative;
+}
+.instagram {
+	width: 200px;
+	height: 200px;
+	background-image: url(ig.png);
+	background-repeat: no-repeat; /*supaya gambarnya tidak diulang-ulang*/
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header {
+	padding: 15px;
+}
+.header .judul {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: Matura MT Script Capitals;
+	padding: 25px 0px;
+}
+.header ul li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.header a:link {
+	color: #110bff;
+	background-color:  #66ff33;
+}
+.header a:hover {
+	font-family: Lucida Calligraphy;
+	font-size: 20px;
+	background-color: #00e6e6;
+}
+.header a:active { font-style: italic; }
+.header a:visited { color: #e6005c; }
+.header a {
+	text-decoration: none;
+	padding: 2px;
+}
+
+
+
+.hero {
+	height: 330px;
+	background-image: url(unplas.jpg);
+	background-size: cover; /*supaya gambar cukup*/
+	background-position: 20px -130px; /*untuk mengatur posisi, value pertama mengatur horizontal value kedua untuk mengatur vertikal*/
+	border-top: 5px solid #33ccff;
+	border-bottom: 5px solid #bf00ff;
+}
+
+
+
+
+.main {
+	padding: 20px;
+	width: 600px;
+	box-sizing: border-box; /*tambahkan property box-sizing supaya lebarnya tetap*/
+	float: left;
+}
+.main h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+.main .penulis {
+	font-size: 10px;
+	margin-top: -3px;
+	text-indent: 5px;
+}
+.main .penulis a {
+	text-decoration: none;
+}
+.main p{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.main p a {
+	text-decoration: none;
+}
+
+
+
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.sidebar h3 {
+	font-weight: bold;
+	color: black;
+}
+.sidebar img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding: 10px;
+}
+.sidebar p {
+	font-size: 11px;
+	line-height: 12px;
+	padding: 10px;
+	text-align: justify;
+}
+p b {
+	font-weight: bold;
+}
+h4 {
+	font-weight: bold;
+	color: black;	
+}
+
+
+		/*ig*/
+		div #buttonIG .IG {
+			margin: 5% auto;
+			width: 100px;
+			text-align: left;
+		}
+		#buttonIG a {
+			    width: 100px;
+			    height: 30px;
+			    vertical-align: middle;
+			    background-color: #00e7ff;
+			    color: #000;
+			    text-decoration: none;
+			    padding: 5px;
+			    border-radius: 50px;
+			    border: 2px solid #f406f1;
+					}
+		#popupIG {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background: rgba(0, 255, 255, 0.5);
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			visibility: hidden;
+		}
+		.windowsIG {
+			width: 400px;
+			height: 150px;
+			background: darkgray;
+			border-radius: 10px;
+			position: relative;
+			padding: 10px;
+			text-align: center;
+			margin: 15% auto;
+			border: 3px solid yellow;
+		}
+		.windowsIG h2 {
+			margin: 30px 0 0 0;
+		}
+		.close-buttonIG {
+			width: 6.5%;
+			height: 16%;
+			line-height: 28px;
+			background: #000;
+			border-radius: 50%;
+			border: 3px solid yellow;
+			display: block;
+			text-align: center;
+			color: yellow;
+			text-decoration: none;
+			position: absolute;
+			top: -10px;
+			right: -10px;
+		}
+		#popupIG:target {
+			visibility: visible;
+		}
+		/*FB*/
+		div #buttonFB .FB {
+			margin: 5% auto;
+			width: 100px;
+			text-align: left;
+		}
+		#buttonFB a {
+				    width: 100px;
+				    height: 30px;
+				    vertical-align: middle;
+				    background-color: #00e7ff;
+				    color: #000;
+				    text-decoration: none;
+				    padding: 5px;
+					border-radius: 50px;
+				        border-top-left-radius: 50px;
+				        border-top-right-radius: 50px;
+				        border-bottom-right-radius: 50px;
+				        border-bottom-left-radius: 50px;
+			  		border: 2px solid #f406f1;
+		}
+		#popupFB {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background: rgba(0, 255, 255, 0.5);
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			visibility: hidden;
+		}
+		.windowsFB {
+			width: 400px;
+			height: 150px;
+			background: darkgray;
+			border-radius: 10px;
+			position: relative;
+			padding: 10px;
+			text-align: center;
+			margin: 15% auto;
+			border: 3px solid yellow;
+		}
+		.windowsFB h2 {
+			margin: 30px 0 0 0;
+		}
+		.close-buttonFB {
+			width: 6.5%;
+			height: 16%;
+			line-height: 28px;
+			background: #000;
+			border-radius: 50%;
+			border: 3px solid yellow;
+			display: block;
+			text-align: center;
+			color: yellow;
+			text-decoration: none;
+			position: absolute;
+			top: -10px;
+			right: -10px;
+		}
+		#popupFB:target {
+			visibility: visible;
+		}
+		/*yt*/
+		div #buttonYT .YT {
+			margin: 5% auto;
+			width: 100px;
+			text-align: left;
+		}
+		#buttonYT a {
+			    width: 100px;
+			    height: 30px;
+			    vertical-align: middle;
+			    background-color: #00e7ff;
+			    color: #000;
+			    text-decoration: none;
+			    padding: 5px;
+			    border-radius: 50px;
+			    border: 2px solid #f406f1;
+		}
+		#popupYT {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background: rgba(0, 255, 255, 0.5);
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			visibility: hidden;
+		}
+		.windowsYT {
+			width: 400px;
+			height: 150px;
+			background: darkgray;
+			border-radius: 10px;
+			position: relative;
+			padding: 10px;
+			text-align: center;
+			margin: 15% auto;
+			border: 3px solid yellow;
+		}
+		.windowsYT h2 {
+			margin: 30px 0 0 0;
+		}
+		.close-buttonYT {
+			width: 6.5%;
+			height: 16%;
+			line-height: 28px;
+			background: #000;
+			border-radius: 50%;
+			border: 3px solid yellow;
+			display: block;
+			text-align: center;
+			color: yellow;
+			text-decoration: none;
+			position: absolute;
+			top: -10px;
+			right: -10px;
+		}
+		#popupYT:target {
+			visibility: visible;
+		}
+		/*tw*/
+		div #buttonTW .TW {
+			margin: 5% auto;
+			width: 100px;
+			text-align: left;
+		}
+		#buttonTW a {
+			    width: 100px;
+			    height: 30px;
+			    vertical-align: middle;
+			    background-color: #00e7ff;
+			    color: #000;
+			    text-decoration: none;
+			    padding: 5px;
+			    border-radius: 50px;
+			    border: 2px solid #f406f1;
+		}
+		#popupTW {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background: rgba(0, 255, 255, 0.5);
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			visibility: hidden;
+		}
+		.windowsTW {
+			width: 400px;
+			height: 150px;
+			background: darkgray;
+			border-radius: 10px;
+			position: relative;
+			padding: 10px;
+			text-align: center;
+			margin: 15% auto;
+			border: 3px solid yellow;
+		}
+		.windowsTW h2 {
+			margin: 30px 0 0 0;
+		}
+		.close-buttonTW {
+			width: 6.5%;
+			height: 16%;
+			line-height: 28px;
+			background: #000;
+			border-radius: 50%;
+			border: 3px solid yellow;
+			display: block;
+			text-align: center;
+			color: yellow;
+			text-decoration: none;
+			position: absolute;
+			top: -10px;
+			right: -10px;
+		}
+		#popupTW:target {
+			visibility: visible;
+		}
+
+
+
+		h3 {
+			font-size: 15px;
+			line-height: 10px;
+			padding: 10px;
+			text-align: left;
+		}
+		div #buttonIG a:hover {
+			background-color: pink;
+			border: 3px solid black;
+		}
+		div #buttonFB a:hover {
+			background-color: pink;
+			border: 3px solid black;
+		}
+		div #buttonTW a:hover {
+			background-color: pink;
+			border: 3px solid black;
+		}
+		div #buttonYT a:hover {
+			background-color: pink;
+			border: 3px solid black;
+		}
+
+
+.footer {
+	background-color: #333;
+	padding: 20px;
+}
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+.size1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+
+
+
+
+
+/*clearfix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
